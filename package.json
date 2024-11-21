@@ -1,0 +1,48 @@
+{
+  "name": "esports-manager",
+  "version": "0.0.1",
+  "description": "Jogo de Gerenciamento de ESports",
+  "author": "Vitor Kern <vitorkern32@gmail.com>",
+  "repository": {
+    "url": "github.com/VitorAKern"
+  },
+  "main": "build/src/App.js",
+  "types": "build/src/App.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "start": "node App.js",
+    "start:dev": "nodemon",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/node": "^10.0.3",
+    "gts": "^1.1.2",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "~3.7.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "http-status-codes": "^1.4.0",
+    "mysql2": "^3.11.4",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6"
+  }
+}

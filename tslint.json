@@ -1,0 +1,10 @@
+{
+  "extends": "gts/tslint.json",
+  "rules": {
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/*.json"
+    ]
+  }
+}
